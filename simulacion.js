@@ -40,7 +40,11 @@ function moverCoche(){
 
     let energiaCinetica = energiaInicial * (posicion / 600);
 
+let energiaPotencialActual =
+energiaInicial * (1 - porcentaje);
 
+let energiaCinetica =
+energiaInicial * porcentaje;
     // Fórmula Ec = 1/2 mv²
 
     velocidad = Math.sqrt(
@@ -53,7 +57,7 @@ function moverCoche(){
 
     posicion += 5;
 
-
+let alturaActual = 170 + (posicion * 0.55);
 
     document.getElementById("coche").style.left =
         posicion + "px";
