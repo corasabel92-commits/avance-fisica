@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Energía Mecánica</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <h1>🚗 Simulador de Energía Mecánica</h1>
+
+    <p>
+        Transformación de energía potencial en energía cinética
+    </p>
+
+
+    <div class="contenedor">
+
+        <div class="pista">
+
+            <div id="coche">
+                🚗
+            </div>
+
+            <div class="pendiente"></div>
+
+        </div>
+
+
+        <div class="panel">
+
+            <h2>Datos del vehículo</h2>
+
+
+            <p>Masa:
+                <b id="masa">
+                    2 kg
+                </b>
+            </p>
+
+
+            <p>Altura inicial:
+                <b id="altura">
+                    10 m
+                </b>
+            </p>
+
+
+            <hr>
+
+
+            <h2>Resultados</h2>
+
+
+            <p>
+                Velocidad:
+                <b id="velocidad">
+                    0 m/s
+                </b>
+            </p>
+
+
+            <p>
+                Energía potencial:
+                <b id="ep">
+                    0 J
+                </b>
+            </p>
+
+
+            <p>
+                Energía cinética:
+                <b id="ec">
+                    0 J
+                </b>
+            </p>
+
+
+            <button onclick="iniciar()">
+                ▶ Iniciar simulación
+            </button>
+
+
+            <button onclick="reiniciar()">
+                🔄 Reiniciar
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+<script src="simulacion.js"></script>
+
+</body>
+
+</html>
