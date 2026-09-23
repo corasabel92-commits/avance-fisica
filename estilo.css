@@ -55,13 +55,12 @@ h1{
 
     position:absolute;
 
-    top:220px;
-    left:70px;
+    top:170px;
+    left:80px;
 
-    transform:rotate(-25deg);
+    transform:rotate(25deg);
 
 }
-
 
 
 #coche{
