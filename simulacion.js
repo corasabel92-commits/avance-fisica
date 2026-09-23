@@ -38,14 +38,15 @@ function moverCoche(){
 
     // La energía potencial se transforma en cinética
 
-    let energiaCinetica = energiaInicial * (posicion / 600);
+ let porcentaje = posicion / 600;
 
-let energiaPotencialActual =
-energiaInicial * (1 - porcentaje);
+if(porcentaje > 1){
+    porcentaje = 1;
+}
 
-let energiaCinetica =
-energiaInicial * porcentaje;
-    // Fórmula Ec = 1/2 mv²
+let energiaPotencialActual = energiaInicial * (1 - porcentaje);
+
+let energiaCinetica = energiaInicial * porcentaje;
 
     velocidad = Math.sqrt(
         (2 * energiaCinetica) / masa
@@ -55,13 +56,20 @@ energiaInicial * porcentaje;
 
     // Avance del coche
 
-    posicion += 5;
+posicion += 3;
 
-let alturaActual = 170 + (posicion * 0.55);
 
-    document.getElementById("coche").style.left =
-        posicion + "px";
+// movimiento vertical siguiendo la pendiente
 
+let nuevaAltura = 140 + (posicion * 0.45);
+
+
+document.getElementById("coche").style.left =
+posicion + "px";
+
+
+document.getElementById("coche").style.top =
+nuevaAltura + "px";
 
 
     // Mostramos datos
