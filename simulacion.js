@@ -38,7 +38,7 @@ function moverCoche(){
 
     // La energía potencial se transforma en cinética
 
-    let energiaCinetica = energiaInicial;
+    let energiaCinetica = energiaInicial * (posicion / 600);
 
 
     // Fórmula Ec = 1/2 mv²
