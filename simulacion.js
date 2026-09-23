@@ -51,7 +51,7 @@ function moverCoche(){
 
     // Avance del coche
 
-    posicion += 3;
+    posicion += 5;
 
 
 
