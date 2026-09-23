@@ -7,7 +7,7 @@ let energiaInicial;
 
 let velocidad = 0;
 
-let posicion = 80;
+let posicion = 100;
 
 
 let tiempo;
